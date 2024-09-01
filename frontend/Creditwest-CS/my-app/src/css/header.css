@@ -1,0 +1,32 @@
+.header {
+    position: sticky;
+    width: 100%;
+    padding: 1.3rem 2rem;
+    box-shadow: 1px 1px 3px rgba(28, 28, 167, 0.485);
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 .5rem;
+    border-radius: 5px; */
+}
+
+.header h1 {
+    color: #015CA9;
+    font-size: 1.2rem;
+    font-weight: 650;
+    margin-left: .3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.238);
+}
+
+.header-flex-group {
+    display: flex;
+    align-items: center;
+}
+
+.username-text {
+    color: #083a66;
+    font-weight: 550;
+    font-size: .75rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}

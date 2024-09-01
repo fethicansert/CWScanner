@@ -1,0 +1,296 @@
+.user-list-page {
+    margin: .3rem;
+    height: 100%;
+    position: relative;
+}
+
+.user-list-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+}
+
+.user-list-user-info-group {
+    display: flex;
+    align-items: center;
+}
+
+.users-page-user-details {
+    display: flex;
+    height: 200px;
+    gap: 0 5px;
+}
+
+.user-list-details-column-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: .3rem;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.user-list-details-column-wrapper,
+.user-list-user-button-column,
+.user-list-user-permissions-column,
+.user-list-details-button-column {
+    border-radius: 5px;
+}
+
+.user-list-user-details-column {
+    padding: .4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.user-list-table {
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.user-list-details-button-column {
+    padding: .6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+    width: 10%;
+    box-shadow: 1px 1px 3px rgba(28, 28, 167, 0.485);
+}
+
+.user-list-update-button,
+.user-list-delete-button {
+    font-family: inherit;
+    font-size: .75rem;
+    font-weight: 570;
+    height: 20%;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(28, 28, 167, 0.485);
+}
+
+.user-list-update-button:hover {
+    background: rgb(65, 145, 102);
+    color: white;
+}
+
+.user-list-delete-button:hover {
+    background: rgb(212, 24, 24);
+    color: white;
+}
+
+.user-list-user-permissions-column {
+    width: 20%;
+    box-shadow: 1px 1px 3px rgba(28, 28, 167, 0.485);
+}
+
+
+.user-list-user-search-filter-bar {
+    box-shadow: 1px 1px 3px rgba(28, 28, 167, 0.485);
+    height: 55px;
+}
+
+.user-list-table {
+    box-shadow: 1px 1px 3px rgba(28, 28, 167, 0.485);
+    flex-grow: 1;
+}
+
+label {
+    font-size: .82rem;
+    font-weight: 500;
+}
+
+.user-list-details-column-wrapper {
+    display: flex;
+    width: 50%;
+    box-shadow: 1px 1px 3px rgba(28, 28, 167, 0.485);
+}
+
+.user-list-user-info-text {
+    font-size: .85rem;
+    margin-left: .2rem;
+}
+
+.user-list-permissions-list,
+.user-list-selected-permissions-list {
+    list-style: none;
+}
+
+.user-list-permissions-list li,
+.user-list-selected-permissions-list li {
+    font-size: .8rem;
+    padding: .2rem .1rem;
+    text-indent: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.user-list-permissions-list li:hover {
+    color: green;
+    background: whitesmoke;
+}
+
+.user-list-permissions-list li:hover .user-page-selected-permission-arrrow {
+    /* background: green; */
+    color: rgb(65, 145, 102);
+    ;
+}
+
+.user-list-selected-permissions-list li:hover .user-page-selected-permission-arrrow-left {
+    color: rgb(212, 24, 24);
+    ;
+}
+
+.user-list-selected-permissions-list li:hover {
+    color: rgb(212, 24, 24);
+    background: whitesmoke;
+}
+
+.user-page-selected-permission-arrrow,
+.user-page-selected-permission-arrrow-left {
+    color: #015CA9;
+}
+
+
+.user-list-user-permissions-column {
+    overflow-y: scroll;
+    padding: 0rem .3rem .3rem .3rem;
+}
+
+.user-list-user-permissions-column h5 {
+    font-size: .8rem;
+    text-decoration: underline;
+    padding-top: .2rem;
+}
+
+h5 {
+    font-size: .9rem;
+    font-weight: 550;
+    color: rgba(0, 0, 0, 0.767);
+    text-decoration: underline;
+    position: sticky;
+    top: 0px;
+    background: white;
+    width: 100%;
+}
+
+.no-permission-text {
+    font-size: .8rem;
+}
+
+.user-list-user-search-filter-bar {
+    display: flex;
+    gap: 0 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.user-list-search-flex {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.user-list-search-flex input {
+    width: 100%;
+    height: 76%;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(28, 28, 167, 0.485);
+    margin: 0 .4rem;
+    text-indent: 10px;
+    border-radius: 3px;
+}
+
+.search-button {
+    height: 75%;
+    border: none;
+    width: 50px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(28, 28, 167, 0.485);
+    cursor: pointer;
+    position: relative;
+}
+
+.search-button-drop-down {
+    position: absolute;
+    top: 115%;
+    left: 0%;
+    /* transform: translateX(-50%); */
+    height: fit-content;
+    width: 130px;
+    height: 170px;
+    box-shadow: 1px 1px 3px rgba(28, 28, 167, 0.485);
+    background: white;
+    border-radius: 5px;
+    z-index: 999;
+    padding: .3rem .4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.search-button-drop-down button {
+
+    border: none;
+    padding: .6rem 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.367);
+    border-radius: 3px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.search-button-drop-down button:hover {
+    background: #015CA9;
+    color: white;
+}
+
+.search-button:hover {
+    background: #015CA9;
+    color: white;
+}
+
+.sort-button,
+.filter-button {
+    width: 20%;
+    border: none;
+    text-transform: uppercase;
+    height: 60%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(28, 28, 167, 0.485);
+    font-family: inherit;
+    font-size: .75rem;
+    font-weight: 570;
+    cursor: pointer;
+}
+
+.sort-button:hover,
+.filter-button:hover {
+    background: #015CA9;
+    color: white;
+}
+
+.filter-button {
+    /* width: 30%; */
+    margin-left: 1rem;
+}
+
+.user-list-search-buttons-flex {
+    padding: 0 1rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.no-permission-text {
+    padding: .3rem;
+}
